@@ -22,4 +22,4 @@ def newton_sqrt(a):
     # Done
     return x
 
-newton_sqrt()
+newton_sqrt(4)
