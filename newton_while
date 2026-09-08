@@ -21,3 +21,5 @@ def newton_sqrt(a):
         iterations_count += 1
     # Done
     return x
+
+newton_sqrt()
