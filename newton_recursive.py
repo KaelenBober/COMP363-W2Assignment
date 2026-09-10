@@ -13,24 +13,23 @@ def newton_sqrt(a,x=None, loops=0):
     if x == None:
         x = a/2
     
-
     # Define the tolerance level for convergence
     epsilon = 0.0001 
-    # Base case, if the tolerance is less than epsilon, we have found the 
+    # Base case, if my tolerance is less than epsilon, we have found the closest convergence
     if abs(x*x-a) < epsilon:
         return x
-    # Recursive call for function
+    # Recursive call after recalculating for new x
     return newton_sqrt(a, recalcuateX(a,x), loops+1)
-        
 
-# Recalculate x 
+
+        
+# Recalculates and returns new x for recursion
 def recalcuateX(a,x):
     x = (x + (a/x)) / 2.0
     return x
  
 
-
-newton_sqrt(37)
+newton_sqrt(36)
 
 
 
